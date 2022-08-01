@@ -3,14 +3,19 @@ public class Main {
         //Задача 1
        int a=0;
         while (a<10){
-            a++;
-            System.out.println(a);
-            }
+            System.out.print(++a+ " ");
 
-        for (int c=10;c>=0;c--){
-            System.out.println(c);
+            }
+        System.out.println();
+
+        for (;a>0;a--){
+            System.out.print(a +" ");
         }
+        System.out.println();
         //Задача 2
+        int friday=1;
+        for (;friday<=31;friday=friday+7)
+        {System.out.println("Сегодня пятница, "+ friday+ "-е число. Необходимо подготовить отчет ");}
 
     }
 }
