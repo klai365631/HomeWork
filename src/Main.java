@@ -41,9 +41,15 @@ public class Main {
         int pong = 5;
         int ping = 3;
         for (int number = 1; number <= 30; number++) {
-            ping=number%ping;
-            System.out.println(+number + ":"+ping);
+
+            if(number%ping==0){
+            System.out.println(number + ": ping");}
+            if(number%pong==0){
+                System.out.println(number + ": pong");}
+            if(number%ping==number%pong){
+                System.out.println(number + ": pin pong");          }
             }
+
 
 
 
